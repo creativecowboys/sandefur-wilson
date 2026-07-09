@@ -83,6 +83,16 @@ export default function Home() {
         <div className="scroll-hint">Scroll</div>
       </section>
 
+      {/* STATS */}
+      <section className="stats" aria-label="At a glance">
+        <div className="wrap stats-grid">
+          <div className="stat"><b>25+</b><span>Years of experience</span></div>
+          <div className="stat"><b>2</b><span>Generations, one practice</span></div>
+          <div className="stat"><b>4</b><span>Ways we help you plan</span></div>
+          <div className="stat"><b>100%</b><span>Independent &amp; personal</span></div>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section className="about" id="about">
         <div className="wrap about-grid">
@@ -172,6 +182,52 @@ export default function Home() {
                 and your taxes work together — not against each other.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PROOF / TRUST */}
+      <section className="proof" id="proof">
+        <div className="wrap">
+          <div className="section-head">
+            <span className="eyebrow">Why families trust us</span>
+            <h2>A steady hand, earned over decades</h2>
+            <p>Real advice from people you can sit across the table from — not a call center or an algorithm.</p>
+          </div>
+
+          <div className="creds">
+            <div className="cred">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17.3 5.7 21.4 8 14 2 9.4h7.6z"/></svg>
+              <b>25+ years</b><span>Guiding South Georgia families through every kind of market.</span>
+            </div>
+            <div className="cred">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <b>A family practice</b><span>Bobby Wilson and his son, working side by side for your family.</span>
+            </div>
+            <div className="cred">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              <b>Independent &amp; fiduciary</b><span>Advice built around your goals — not a product to sell. <em>[confirm registrations]</em></span>
+            </div>
+            <div className="cred">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+              <b>Rooted in Albany</b><span>A local practice that knows this community and plans for the long haul.</span>
+            </div>
+          </div>
+
+          {/* Placeholder testimonials — replace with real, approved client quotes (mind advisory testimonial rules) */}
+          <div className="quotes">
+            <figure className="quote">
+              <blockquote>&ldquo;Bobby has looked after our family&apos;s finances for years. He explains everything plainly and always has our long-term interests at heart.&rdquo;</blockquote>
+              <figcaption>Client, Albany GA <span>&middot; placeholder</span></figcaption>
+            </figure>
+            <figure className="quote">
+              <blockquote>&ldquo;Having father and son on our plan gives us real peace of mind — a steady hand today and for the next generation.&rdquo;</blockquote>
+              <figcaption>Client, Lee County GA <span>&middot; placeholder</span></figcaption>
+            </figure>
+            <figure className="quote">
+              <blockquote>&ldquo;No pressure, no jargon. Just clear guidance that&apos;s helped us plan for retirement with confidence.&rdquo;</blockquote>
+              <figcaption>Client, Dougherty County GA <span>&middot; placeholder</span></figcaption>
+            </figure>
           </div>
         </div>
       </section>
