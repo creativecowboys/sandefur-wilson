@@ -1,34 +1,56 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
-    const hdr = document.getElementById("hdr");
-    const onScroll = () =>
-      hdr && hdr.classList.toggle("scrolled", window.scrollY > 40);
+    const onScroll = () => setScrolled(window.scrollY > 40);
     onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <>
-      <header id="hdr">
+      <header
+        id="hdr"
+        className={`${scrolled ? "scrolled" : ""} ${menuOpen ? "menu-open" : ""}`}
+      >
         <div className="wrap nav">
-          <a href="#top" className="brand">
+          <a href="#top" className="brand" onClick={closeMenu}>
             <img src="/images/mark-white.png" alt="SW" />
             <span className="brand-txt">
               <b>Sandefur Wilson</b>
               <span>Asset Management</span>
             </span>
           </a>
-          <nav className="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#philosophy">Approach</a>
-            <a href="#contact">Contact</a>
-            <a href="#contact" className="btn">
+          <button
+            className="nav-toggle"
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((o) => !o)}
+          >
+            {menuOpen ? (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="M18 6L6 18M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="M3 6h18M3 12h18M3 18h18" />
+              </svg>
+            )}
+          </button>
+          <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+            <a href="#about" onClick={closeMenu}>About</a>
+            <a href="#services" onClick={closeMenu}>Services</a>
+            <a href="#philosophy" onClick={closeMenu}>Approach</a>
+            <a href="#contact" onClick={closeMenu}>Contact</a>
+            <a href="#contact" className="btn" onClick={closeMenu}>
               Schedule a call
             </a>
           </nav>
