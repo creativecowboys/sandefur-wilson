@@ -2,20 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-/* Signature motif: concentric "growth rings" — tree rings / seasons / the long view */
-function Rings({ className }) {
-  const rings = [];
-  for (let i = 1; i <= 7; i++) {
-    const r = i * 44;
-    rings.push(<ellipse key={i} cx="220" cy="220" rx={r} ry={r * 0.82} />);
-  }
-  return (
-    <svg className={className} viewBox="0 0 440 440" aria-hidden="true">
-      {rings}
-    </svg>
-  );
-}
-
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -99,7 +85,6 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero" id="top">
-        <Rings className="rings rings-hero" />
         <div className="wrap hero-inner">
           <span className="eyebrow">Albany, Georgia&nbsp;·&nbsp;Since 2001</span>
           <h1>
@@ -126,7 +111,6 @@ export default function Home() {
 
       {/* STATS */}
       <section className="stats" aria-label="At a glance">
-        <Rings className="rings rings-stats" />
         <div className="wrap stats-grid">
           <div className="stat reveal"><b>25+</b><span>Years of experience</span></div>
           <div className="stat reveal"><b>2</b><span>Generations, one practice</span></div>
@@ -276,7 +260,6 @@ export default function Home() {
 
       {/* PHILOSOPHY */}
       <section className="philosophy" id="philosophy">
-        <Rings className="rings rings-phil" />
         <div className="wrap">
           <span className="eyebrow">Our approach</span>
           <h2>
