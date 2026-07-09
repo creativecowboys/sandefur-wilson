@@ -156,7 +156,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--sun);outline-offset
 section{scroll-margin-top:66px}
 
 @media(max-width:900px){
-  .wrap{padding:0 24px}
+  .wrap{padding:0 30px}
   .nav{height:66px}
   .nav-toggle{display:flex;align-items:center;z-index:60}
   header.menu-open{background:rgba(21,35,24,.98);backdrop-filter:blur(10px)}
@@ -179,7 +179,7 @@ section{scroll-margin-top:66px}
   .section-head{margin-bottom:36px}
 
   .hero{min-height:92vh}
-  .hero-inner{padding:126px 16px 90px}
+  .hero-inner{padding:128px 30px 92px}
   .hero h1{margin:16px 0 20px}
   .hero p{font-size:1.05rem;margin-bottom:28px}
   .hero-cta{gap:12px}
