@@ -132,11 +132,12 @@ export default function Home() {
               knows the terrain.
             </p>
             <p>
-              That&apos;s the work Bobby Wilson has done for over 25 years.
-              Today he runs Sandefur Wilson Asset Management alongside his son —
-              a true family practice, helping people across South Georgia see
-              the whole landscape of their finances and make confident decisions
-              for the decades ahead.
+              That&apos;s the work Bobby Wilson has done for over 25 years. He
+              took the firm over from its founder — his father-in-law, Bill
+              Sandefur — and today runs Sandefur Wilson Asset Management
+              alongside his son, Robert Aaron. A true family business, helping
+              people across South Georgia see the whole landscape of their
+              finances and plan with confidence for the decades ahead.
             </p>
             <p>
               No pressure, no jargon. Just clear guidance and a plan that grows
@@ -144,7 +145,7 @@ export default function Home() {
             </p>
           </div>
           <div className="about-photo reveal">
-            <img src="/images/family.jpg" alt="Bobby Wilson and his son" />
+            <img src="/images/family.jpg" alt="Bobby Wilson and his son, Robert Aaron" />
             <div className="tag">
               <b>25+</b>
               <span>years guiding families through every kind of market</span>
@@ -228,7 +229,7 @@ export default function Home() {
             </div>
             <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              <b>A family practice</b><span>Bobby Wilson and his son, working side by side for your family.</span>
+              <b>A family business</b><span>Bobby works side by side with his son, Robert Aaron, carrying on the firm founded by Bill Sandefur.</span>
             </div>
             <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
