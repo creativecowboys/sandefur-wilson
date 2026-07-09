@@ -2,6 +2,20 @@
 
 import { useEffect, useState } from "react";
 
+/* Signature motif: concentric "growth rings" — tree rings / seasons / the long view */
+function Rings({ className }) {
+  const rings = [];
+  for (let i = 1; i <= 7; i++) {
+    const r = i * 44;
+    rings.push(<ellipse key={i} cx="220" cy="220" rx={r} ry={r * 0.82} />);
+  }
+  return (
+    <svg className={className} viewBox="0 0 440 440" aria-hidden="true">
+      {rings}
+    </svg>
+  );
+}
+
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,6 +25,32 @@ export default function Home() {
     onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const els = document.querySelectorAll(".reveal");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce || !("IntersectionObserver" in window)) {
+      els.forEach((e) => e.classList.add("in"));
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            en.target.classList.add("in");
+            io.unobserve(en.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+    );
+    els.forEach((e) => io.observe(e));
+    const safety = setTimeout(() => els.forEach((e) => e.classList.add("in")), 1600);
+    return () => {
+      io.disconnect();
+      clearTimeout(safety);
+    };
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
@@ -59,6 +99,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero" id="top">
+        <Rings className="rings rings-hero" />
         <div className="wrap hero-inner">
           <span className="eyebrow">Albany, Georgia&nbsp;·&nbsp;Since 2001</span>
           <h1>
@@ -85,18 +126,19 @@ export default function Home() {
 
       {/* STATS */}
       <section className="stats" aria-label="At a glance">
+        <Rings className="rings rings-stats" />
         <div className="wrap stats-grid">
-          <div className="stat"><b>25+</b><span>Years of experience</span></div>
-          <div className="stat"><b>2</b><span>Generations, one practice</span></div>
-          <div className="stat"><b>4</b><span>Ways we help you plan</span></div>
-          <div className="stat"><b>100%</b><span>Independent &amp; personal</span></div>
+          <div className="stat reveal"><b>25+</b><span>Years of experience</span></div>
+          <div className="stat reveal"><b>2</b><span>Generations, one practice</span></div>
+          <div className="stat reveal"><b>4</b><span>Ways we help you plan</span></div>
+          <div className="stat reveal"><b>100%</b><span>Independent &amp; personal</span></div>
         </div>
       </section>
 
       {/* ABOUT */}
       <section className="about" id="about">
         <div className="wrap about-grid">
-          <div className="about-txt">
+          <div className="about-txt reveal">
             <span className="eyebrow">Who we are</span>
             <h2>Rooted in experience. Focused on you.</h2>
             <p>
@@ -117,7 +159,7 @@ export default function Home() {
               with you.
             </p>
           </div>
-          <div className="about-photo">
+          <div className="about-photo reveal">
             <img src="/images/family.jpg" alt="Bobby Wilson and his son" />
             <div className="tag">
               <b>25+</b>
@@ -130,7 +172,7 @@ export default function Home() {
       {/* SERVICES */}
       <section className="services" id="services">
         <div className="wrap">
-          <div className="section-head">
+          <div className="section-head reveal">
             <span className="eyebrow">What we do</span>
             <h2>Guidance for every season</h2>
             <p>
@@ -139,7 +181,7 @@ export default function Home() {
             </p>
           </div>
           <div className="cards">
-            <div className="card">
+            <div className="card reveal">
               <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M3 3v18h18" />
                 <path d="M7 14l4-4 3 3 5-6" />
@@ -150,7 +192,7 @@ export default function Home() {
                 risk — then tended over time as the landscape shifts.
               </p>
             </div>
-            <div className="card">
+            <div className="card reveal">
               <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M9 11l3 3L22 4" />
                 <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
@@ -161,7 +203,7 @@ export default function Home() {
                 everything in between, adjusted as life changes.
               </p>
             </div>
-            <div className="card">
+            <div className="card reveal">
               <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
@@ -171,7 +213,7 @@ export default function Home() {
                 you love, in every season of life.
               </p>
             </div>
-            <div className="card">
+            <div className="card reveal">
               <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                 <path d="M14 2v6h6M8 13h8M8 17h5" />
@@ -189,26 +231,26 @@ export default function Home() {
       {/* PROOF / TRUST */}
       <section className="proof" id="proof">
         <div className="wrap">
-          <div className="section-head">
+          <div className="section-head reveal">
             <span className="eyebrow">Why families trust us</span>
             <h2>A steady hand, earned over decades</h2>
             <p>Real advice from people you can sit across the table from — not a call center or an algorithm.</p>
           </div>
 
           <div className="creds">
-            <div className="cred">
+            <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17.3 5.7 21.4 8 14 2 9.4h7.6z"/></svg>
               <b>25+ years</b><span>Guiding South Georgia families through every kind of market.</span>
             </div>
-            <div className="cred">
+            <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               <b>A family practice</b><span>Bobby Wilson and his son, working side by side for your family.</span>
             </div>
-            <div className="cred">
+            <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
               <b>Independent &amp; fiduciary</b><span>Advice built around your goals — not a product to sell. <em>[confirm registrations]</em></span>
             </div>
-            <div className="cred">
+            <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
               <b>Rooted in Albany</b><span>A local practice that knows this community and plans for the long haul.</span>
             </div>
@@ -216,15 +258,15 @@ export default function Home() {
 
           {/* Placeholder testimonials — replace with real, approved client quotes (mind advisory testimonial rules) */}
           <div className="quotes">
-            <figure className="quote">
+            <figure className="quote reveal">
               <blockquote>&ldquo;Bobby has looked after our family&apos;s finances for years. He explains everything plainly and always has our long-term interests at heart.&rdquo;</blockquote>
               <figcaption>Client, Albany GA <span>&middot; placeholder</span></figcaption>
             </figure>
-            <figure className="quote">
+            <figure className="quote reveal">
               <blockquote>&ldquo;Having father and son on our plan gives us real peace of mind — a steady hand today and for the next generation.&rdquo;</blockquote>
               <figcaption>Client, Lee County GA <span>&middot; placeholder</span></figcaption>
             </figure>
-            <figure className="quote">
+            <figure className="quote reveal">
               <blockquote>&ldquo;No pressure, no jargon. Just clear guidance that&apos;s helped us plan for retirement with confidence.&rdquo;</blockquote>
               <figcaption>Client, Dougherty County GA <span>&middot; placeholder</span></figcaption>
             </figure>
@@ -234,6 +276,7 @@ export default function Home() {
 
       {/* PHILOSOPHY */}
       <section className="philosophy" id="philosophy">
+        <Rings className="rings rings-phil" />
         <div className="wrap">
           <span className="eyebrow">Our approach</span>
           <h2>
@@ -250,7 +293,7 @@ export default function Home() {
           <div className="contact-photo">
             <img src="/images/feathers.jpg" alt="Georgia outdoors" />
           </div>
-          <div className="contact-txt">
+          <div className="contact-txt reveal">
             <span className="eyebrow">Get in touch</span>
             <h2>Let&apos;s walk the path together.</h2>
             <div className="detail">
