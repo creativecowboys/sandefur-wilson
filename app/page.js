@@ -284,7 +284,7 @@ export default function Home() {
               <div>
                 <div className="k">Office</div>
                 <div className="v">
-                  2305 Robinhood Dr
+                  2305 Robinhood Road
                   <br />
                   Albany, GA 31707
                 </div>
@@ -320,7 +320,7 @@ export default function Home() {
                 <span>Asset Management</span>
               </span>
             </a>
-            <div>2305 Robinhood Dr, Albany, GA 31707&nbsp;·&nbsp;(229) 436-5472</div>
+            <div>2305 Robinhood Road, Albany, GA 31707&nbsp;·&nbsp;(229) 436-5472</div>
           </div>
           <p className="disclosure">
             <strong>Placeholder — pending compliance review.</strong> Add
