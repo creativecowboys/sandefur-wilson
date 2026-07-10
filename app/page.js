@@ -113,7 +113,7 @@ export default function Home() {
       <section className="stats" aria-label="At a glance">
         <div className="wrap stats-grid">
           <div className="stat reveal"><b>25+</b><span>Years of experience</span></div>
-          <div className="stat reveal"><b>2</b><span>Generations, one practice</span></div>
+          <div className="stat reveal"><b>3</b><span>Generations, one practice</span></div>
           <div className="stat reveal"><b>4</b><span>Ways we help you plan</span></div>
           <div className="stat reveal"><b>100%</b><span>Independent &amp; personal</span></div>
         </div>
