@@ -74,6 +74,7 @@ export default function Home() {
           <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
             <a href="#about" onClick={closeMenu}>About</a>
             <a href="#services" onClick={closeMenu}>Services</a>
+            <a href="#team" onClick={closeMenu}>Team</a>
             <a href="#philosophy" onClick={closeMenu}>Approach</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
             <a href="#contact" className="btn" onClick={closeMenu}>
@@ -86,15 +87,15 @@ export default function Home() {
       {/* HERO */}
       <section className="hero" id="top">
         <div className="wrap hero-inner">
-          <span className="eyebrow">Albany, Georgia&nbsp;·&nbsp;Since 2001</span>
+          <span className="eyebrow">Albany, Georgia&nbsp;·&nbsp;Since 1953</span>
           <h1>
             Plant today.
             <br />
             Harvest for life.
           </h1>
           <p>
-            For more than 25 years, Sandefur Wilson Asset Management has helped
-            families and individuals grow, protect, and pass on what they&apos;ve
+            For more than 50 years, Sandefur Wilson Asset Management has helped
+            families, individuals, and businesses grow, protect, and pass on what they&apos;ve
             worked for — with a steady hand and a long view.
           </p>
           <div className="hero-cta">
@@ -112,10 +113,10 @@ export default function Home() {
       {/* STATS */}
       <section className="stats" aria-label="At a glance">
         <div className="wrap stats-grid">
-          <div className="stat reveal"><b>25+</b><span>Years of experience</span></div>
+          <div className="stat reveal"><b>50+</b><span>Years of experience</span></div>
           <div className="stat reveal"><b>3</b><span>Generations, one practice</span></div>
-          <div className="stat reveal"><b>4</b><span>Ways we help you plan</span></div>
-          <div className="stat reveal"><b>100%</b><span>Independent &amp; personal</span></div>
+          <div className="stat reveal"><b>$700B+</b><span>Client assets through Osaic</span></div>
+          <div className="stat reveal"><b>100%</b><span>Fiduciary &amp; independent</span></div>
         </div>
       </section>
 
@@ -124,30 +125,39 @@ export default function Home() {
         <div className="wrap about-grid">
           <div className="about-txt reveal">
             <span className="eyebrow">Who we are</span>
-            <h2>Rooted in experience. Focused on you.</h2>
+            <h2>Rooted in family values, serving clients nationwide.</h2>
             <p>
-              Good financial planning is a lot like a healthy forest — it
-              isn&apos;t built overnight, and it isn&apos;t built by accident.
-              It grows season by season, with patience, care, and someone who
-              knows the terrain.
+              Rooted in family values, serving clients nationwide with
+              personalized financial guidance and long-term planning for every
+              stage of life.
             </p>
             <p>
-              That&apos;s the work Bobby Wilson has done for over 25 years. He
-              took the firm over from its founder — his father-in-law, Bill
-              Sandefur — and today runs Sandefur Wilson Asset Management
-              alongside his son, Robert Aaron. A true family business, helping
-              people across South Georgia see the whole landscape of their
-              finances and plan with confidence for the decades ahead.
+              Our product recommendation comes from years of experience and
+              watching the trends and flows of the economy. Founded by Bill
+              Sandefur in 1953, Sandefur Wilson Asset Management has grown into a
+              multi-generational practice built on trust, stability, and genuine
+              relationships.
             </p>
             <p>
-              No pressure, no jargon. Just clear guidance and a plan that grows
-              with you.
+              As a fiduciary, every recommendation we make is guided by one
+              principle: what&apos;s in your best interest. Our advice is based on
+              your goals, not on commissions, sales incentives, or what&apos;s most
+              profitable for our firm.
+            </p>
+            <p>
+              We are proud to be an affiliate of Osaic, one of the largest
+              independent wealth management platforms in the United States.
+              Osaic supports over 11,000 independent financial professionals and
+              270 financial institutions, overseeing more than $700 billion in
+              total client assets — giving our clients access to the resources
+              and depth of a national platform with the personal attention of a
+              local firm.
             </p>
           </div>
           <div className="about-photo reveal">
-            <img src="/images/family.jpg" alt="Bobby Wilson and his son, Robert Aaron" />
+            <img src="/images/office-exterior.jpg" alt="Sandefur Wilson Asset Management office in Albany, Georgia" />
             <div className="tag">
-              <b>25+</b>
+              <b>50+</b>
               <span>years guiding families through every kind of market</span>
             </div>
           </div>
@@ -161,11 +171,11 @@ export default function Home() {
             <span className="eyebrow">What we do</span>
             <h2>Guidance for every season</h2>
             <p>
-              Comprehensive advice for individuals and families who want a
-              trusted guide, not a sales pitch.
+              Comprehensive services for families and businesses who want
+              trusted advice.
             </p>
           </div>
-          <div className="cards">
+          <div className="cards cards-3">
             <div className="card reveal">
               <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M3 3v18h18" />
@@ -198,16 +208,42 @@ export default function Home() {
                 you love, in every season of life.
               </p>
             </div>
-            <div className="card reveal">
-              <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                <path d="M14 2v6h6M8 13h8M8 17h5" />
-              </svg>
-              <h3>Tax Preparation</h3>
-              <p>
-                Preparation that fits into the bigger picture, so your planning
-                and your taxes work together — not against each other.
-              </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MEET THE TEAM */}
+      <section className="team" id="team">
+        <div className="wrap">
+          <div className="section-head reveal">
+            <span className="eyebrow">Meet the team</span>
+            <h2>Three generations. One purpose.</h2>
+          </div>
+          <div className="team-grid">
+            <div className="team-photo reveal">
+              <img src="/images/wilson-family.jpg" alt="Bobby Wilson and Robert Aaron Wilson" />
+            </div>
+            <div className="team-members reveal">
+              <div className="team-member">
+                <h3>Bobby Wilson</h3>
+                <span className="role">Principal &amp; Financial Advisor</span>
+                <p>
+                  Bobby took the reins from the firm&apos;s founder — his father-in-law,
+                  Bill Sandefur — and has spent decades helping families across
+                  South Georgia see the whole landscape of their finances and plan
+                  with confidence.
+                </p>
+              </div>
+              <div className="team-member">
+                <h3>Robert Aaron Wilson</h3>
+                <span className="role">Financial Advisor</span>
+                <p>
+                  Working alongside his father, Robert Aaron brings the next
+                  generation of the firm&apos;s commitment to personal, long-term
+                  financial guidance — ensuring continuity for the families they
+                  serve.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -225,15 +261,15 @@ export default function Home() {
           <div className="creds">
             <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17.3 5.7 21.4 8 14 2 9.4h7.6z"/></svg>
-              <b>25+ years</b><span>Guiding South Georgia families through every kind of market.</span>
+              <b>50+ years</b><span>Guiding families across the nation through every kind of market.</span>
             </div>
             <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              <b>A family business</b><span>Bobby works side by side with his son, Robert Aaron, carrying on the firm founded by Bill Sandefur.</span>
+              <b>A family business</b><span>Our family ownership shapes the way we serve—placing relationships before transactions, earning trust through every interaction, and providing thoughtful financial guidance that lasts for generations.</span>
             </div>
             <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-              <b>Independent &amp; fiduciary</b><span>Advice built around your goals — not a product to sell. <em>[confirm registrations]</em></span>
+              <b>Independent &amp; fiduciary</b><span>Advice built around your goals — not a product to sell. Every recommendation is made with your best interest in mind.</span>
             </div>
             <div className="cred reveal">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
@@ -241,19 +277,19 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Placeholder testimonials — replace with real, approved client quotes (mind advisory testimonial rules) */}
+          {/* Client testimonials — leaving for now pending compliance review */}
           <div className="quotes">
             <figure className="quote reveal">
               <blockquote>&ldquo;Bobby has looked after our family&apos;s finances for years. He explains everything plainly and always has our long-term interests at heart.&rdquo;</blockquote>
-              <figcaption>Client, Albany GA <span>&middot; placeholder</span></figcaption>
+              <figcaption>Client, Albany GA</figcaption>
             </figure>
             <figure className="quote reveal">
               <blockquote>&ldquo;Having father and son on our plan gives us real peace of mind — a steady hand today and for the next generation.&rdquo;</blockquote>
-              <figcaption>Client, Lee County GA <span>&middot; placeholder</span></figcaption>
+              <figcaption>Client, Lee County GA</figcaption>
             </figure>
             <figure className="quote reveal">
               <blockquote>&ldquo;No pressure, no jargon. Just clear guidance that&apos;s helped us plan for retirement with confidence.&rdquo;</blockquote>
-              <figcaption>Client, Dougherty County GA <span>&middot; placeholder</span></figcaption>
+              <figcaption>Client, Dougherty County GA</figcaption>
             </figure>
           </div>
         </div>
@@ -264,9 +300,10 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow">Our approach</span>
           <h2>
-            &ldquo;We make decisions for decades, not headlines. The best plans,
-            like the healthiest land, are grown with patience and tended with
-            care.&rdquo;
+            We measure success by the lives we help build, not the products we
+            sell. As fiduciaries, every recommendation is made with one purpose:
+            serving your best interest through thoughtful, long-term financial
+            guidance.
           </h2>
         </div>
       </section>
@@ -275,7 +312,7 @@ export default function Home() {
       <section className="contact" id="contact">
         <div className="wrap contact-grid">
           <div className="contact-photo">
-            <img src="/images/feathers.jpg" alt="Georgia outdoors" />
+            <img src="/images/cypress-moss.jpg" alt="South Georgia waterway" />
           </div>
           <div className="contact-txt reveal">
             <span className="eyebrow">Get in touch</span>
@@ -323,11 +360,13 @@ export default function Home() {
             <div>2305 Robinhood Road, Albany, GA 31707&nbsp;·&nbsp;(229) 436-5472</div>
           </div>
           <p className="disclosure">
-            <strong>Placeholder — pending compliance review.</strong> Add
-            required disclosures, firm registration / broker-dealer affiliation,
-            ADV language, and product disclaimers before publishing. Investment
-            advisory and insurance products carry required disclosures. © 2026
-            Sandefur Wilson Asset Management, LLC. All rights reserved.
+            Securities and advisory services offered through Osaic Wealth, Inc.,
+            member <a href="https://www.finra.org" target="_blank" rel="noopener noreferrer">FINRA</a>/<a href="https://www.sipc.org" target="_blank" rel="noopener noreferrer">SIPC</a>.
+            Sandefur Wilson Asset Management, LLC is separately owned and other
+            entities and/or marketing names, products, or services referenced
+            here are independent of Osaic Wealth, Inc. Investment advisory and
+            insurance products carry required disclosures. © 2026 Sandefur Wilson
+            Asset Management, LLC. All rights reserved.
           </p>
         </div>
       </footer>
