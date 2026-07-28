@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import SiteFooter from "./components/SiteFooter";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -347,29 +348,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer>
-        <div className="wrap">
-          <div className="foot-top">
-            <a href="#top" className="brand">
-              <img src="/images/mark-white.png" alt="SW" />
-              <span className="brand-txt">
-                <b>Sandefur Wilson</b>
-                <span>Asset Management</span>
-              </span>
-            </a>
-            <div>2305 Robinhood Road, Albany, GA 31707&nbsp;·&nbsp;(229) 436-5472</div>
-          </div>
-          <p className="disclosure">
-            Securities and advisory services offered through Osaic Wealth, Inc.,
-            member <a href="https://www.finra.org" target="_blank" rel="noopener noreferrer">FINRA</a>/<a href="https://www.sipc.org" target="_blank" rel="noopener noreferrer">SIPC</a>.
-            Sandefur Wilson Asset Management, LLC is separately owned and other
-            entities and/or marketing names, products, or services referenced
-            here are independent of Osaic Wealth, Inc. Investment advisory and
-            insurance products carry required disclosures. © 2026 Sandefur Wilson
-            Asset Management, LLC. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }
