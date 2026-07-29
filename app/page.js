@@ -77,7 +77,8 @@ export default function Home() {
             <a href="#services" onClick={closeMenu}>Services</a>
             <a href="#team" onClick={closeMenu}>Team</a>
             <a href="#philosophy" onClick={closeMenu}>Approach</a>
-            <a href="#contact" onClick={closeMenu}>Contact</a>
+            <a href="/contact" onClick={closeMenu}>Contact</a>
+            <a href="/resources" onClick={closeMenu}>Client Links</a>
             <a href="#contact" className="btn" onClick={closeMenu}>
               Schedule a call
             </a>
