@@ -89,7 +89,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero" id="top">
         <div className="wrap hero-inner">
-          <span className="eyebrow">Albany, Georgia&nbsp;·&nbsp;Since 1953</span>
+          <span className="eyebrow">Albany, Georgia&nbsp;·&nbsp;Since 1973</span>
           <h1>
             Plant today.
             <br />
@@ -135,16 +135,43 @@ export default function Home() {
             </p>
             <p>
               Our product recommendation comes from years of experience and
-              watching the trends and flows of the economy. Founded by Bill
-              Sandefur in 1953, Sandefur Wilson Asset Management has grown into a
-              multi-generational practice built on trust, stability, and genuine
-              relationships.
+              watching the trends and flows of the economy.
             </p>
             <p>
-              As a fiduciary, every recommendation we make is guided by one
-              principle: what&apos;s in your best interest. Our advice is based on
-              your goals, not on commissions, sales incentives, or what&apos;s most
-              profitable for our firm.
+              Sandefur Wilson Asset Management traces its roots to 1973,
+              representing more than five decades of personalized financial
+              guidance and three generations of family leadership.
+            </p>
+            <p>
+              William E. &ldquo;Bill&rdquo; Sandefur founded the original practice
+              in 1973 as Sandefur and Associates. In 2003, Robert A.
+              &ldquo;Bobby&rdquo; Wilson established his own practice and began
+              working alongside Bill.
+            </p>
+            <p>
+              In 2017, the firm transitioned to the independent advisory model
+              through Triad Advisors. This move allowed the practice to serve
+              investment advisory clients in a fiduciary capacity while gaining
+              greater flexibility, expanded investment options, and enhanced
+              resources&mdash;all while remaining independently owned. As
+              fiduciaries, the firm&rsquo;s investment advisory professionals are
+              committed to acting in their clients&rsquo; best interests and
+              providing guidance tailored to each client&rsquo;s unique goals.
+            </p>
+            <p>
+              In 2023, the firm proudly entered its third generation as Robert A.
+              Wilson II joined the team, continuing a legacy of trusted financial
+              guidance. Following Bill&rsquo;s retirement after 50 years of
+              dedicated service, his practice was seamlessly integrated with
+              Bobby&rsquo;s, uniting decades of experience and longstanding client
+              relationships under one firm. During this same year, Triad Advisors
+              became part of the unified Osaic brand, providing independent
+              advisors with expanded technology, resources, and support.
+            </p>
+            <p>
+              In 2024, the firm updated the name to Sandefur Wilson Asset
+              Management LLC, reflecting both its rich history and continued
+              growth.
             </p>
             <p>
               We are proud to be an affiliate of Osaic, one of the largest

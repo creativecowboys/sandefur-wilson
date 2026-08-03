@@ -64,10 +64,12 @@ section{padding:110px 0}
 
 /* ABOUT */
 .about{background:var(--cream)}
-.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+/* The bio runs long (full firm history), so the photo tracks alongside it
+   instead of floating centred in a tall column of dead space. */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:start}
 .about-txt h2{font-size:clamp(2rem,4vw,2.9rem);color:var(--forest);margin:14px 0 22px}
 .about-txt p{color:#43483f;margin-bottom:18px;font-size:1.05rem}
-.about-photo{position:relative}
+.about-photo{position:sticky;top:110px}
 .about-photo img{width:100%;border-radius:4px;box-shadow:0 30px 60px -30px rgba(30,49,38,.55)}
 .about-photo .tag{position:absolute;bottom:-22px;left:-22px;background:var(--forest);color:var(--sand);padding:22px 26px;border-radius:4px;max-width:220px}
 .about-photo .tag b{font-family:'Fraunces',serif;font-size:2.4rem;color:#fff;display:block;line-height:1}
@@ -275,6 +277,8 @@ section{scroll-margin-top:66px}
   .hero-cta .btn{flex:1 1 auto;text-align:center}
 
   .about-grid,.contact-grid,.team-grid{grid-template-columns:1fr;gap:36px}
+  /* Single column below this width — sticky would pin the photo mid-scroll. */
+  .about-photo{position:relative;top:auto}
   .about-photo .tag{left:14px;bottom:14px;padding:16px 20px}
   .about-photo .tag b{font-size:2rem}
   .contact-photo{order:2}
