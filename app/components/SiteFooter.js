@@ -27,15 +27,18 @@ export default function SiteFooter({ home = "#top" }) {
           insurance products carry required disclosures. © 2026 Sandefur Wilson
           Asset Management, LLC. All rights reserved.
         </p>
-        <a
-          className="cc-credit"
-          href="https://creativecowboys.co"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>Designed by</span>
-          <img src="/images/creative-cowboys-white.png" alt="Creative Cowboys" />
-        </a>
+        <div className="foot-bottom">
+          <a
+            className="cc-credit"
+            href="https://creativecowboys.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Designed and built by Creative Cowboys"
+          >
+            <span>Designed &amp; built by</span>
+            <img src="/images/creative-cowboys-white.png" alt="Creative Cowboys" />
+          </a>
+        </div>
       </div>
     </footer>
   );
