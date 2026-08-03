@@ -6,6 +6,7 @@ import SiteFooter from "./components/SiteFooter";
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [bioOpen, setBioOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -142,46 +143,66 @@ export default function Home() {
               representing more than five decades of personalized financial
               guidance and three generations of family leadership.
             </p>
-            <p>
-              William E. &ldquo;Bill&rdquo; Sandefur founded the original practice
-              in 1973 as Sandefur and Associates. In 2003, Robert A.
-              &ldquo;Bobby&rdquo; Wilson established his own practice and began
-              working alongside Bill.
-            </p>
-            <p>
-              In 2017, the firm transitioned to the independent advisory model
-              through Triad Advisors. This move allowed the practice to serve
-              investment advisory clients in a fiduciary capacity while gaining
-              greater flexibility, expanded investment options, and enhanced
-              resources&mdash;all while remaining independently owned. As
-              fiduciaries, the firm&rsquo;s investment advisory professionals are
-              committed to acting in their clients&rsquo; best interests and
-              providing guidance tailored to each client&rsquo;s unique goals.
-            </p>
-            <p>
-              In 2023, the firm proudly entered its third generation as Robert A.
-              Wilson II joined the team, continuing a legacy of trusted financial
-              guidance. Following Bill&rsquo;s retirement after 50 years of
-              dedicated service, his practice was seamlessly integrated with
-              Bobby&rsquo;s, uniting decades of experience and longstanding client
-              relationships under one firm. During this same year, Triad Advisors
-              became part of the unified Osaic brand, providing independent
-              advisors with expanded technology, resources, and support.
-            </p>
-            <p>
-              In 2024, the firm updated the name to Sandefur Wilson Asset
-              Management LLC, reflecting both its rich history and continued
-              growth.
-            </p>
-            <p>
-              We are proud to be an affiliate of Osaic, one of the largest
-              independent wealth management platforms in the United States.
-              Osaic supports over 11,000 independent financial professionals and
-              270 financial institutions, overseeing more than $700 billion in
-              total client assets — giving our clients access to the resources
-              and depth of a national platform with the personal attention of a
-              local firm.
-            </p>
+            {/* Full history, revealed by the toggle below. Same client copy —
+                collapsed only, never abridged. */}
+            <div id="bio-more" className={`bio-more ${bioOpen ? "open" : ""}`} hidden={!bioOpen}>
+              <p>
+                William E. &ldquo;Bill&rdquo; Sandefur founded the original practice
+                in 1973 as Sandefur and Associates. In 2003, Robert A.
+                &ldquo;Bobby&rdquo; Wilson established his own practice and began
+                working alongside Bill.
+              </p>
+              <p>
+                In 2017, the firm transitioned to the independent advisory model
+                through Triad Advisors. This move allowed the practice to serve
+                investment advisory clients in a fiduciary capacity while gaining
+                greater flexibility, expanded investment options, and enhanced
+                resources&mdash;all while remaining independently owned. As
+                fiduciaries, the firm&rsquo;s investment advisory professionals are
+                committed to acting in their clients&rsquo; best interests and
+                providing guidance tailored to each client&rsquo;s unique goals.
+              </p>
+              <p>
+                In 2023, the firm proudly entered its third generation as Robert A.
+                Wilson II joined the team, continuing a legacy of trusted financial
+                guidance. Following Bill&rsquo;s retirement after 50 years of
+                dedicated service, his practice was seamlessly integrated with
+                Bobby&rsquo;s, uniting decades of experience and longstanding client
+                relationships under one firm. During this same year, Triad Advisors
+                became part of the unified Osaic brand, providing independent
+                advisors with expanded technology, resources, and support.
+              </p>
+              <p>
+                In 2024, the firm updated the name to Sandefur Wilson Asset
+                Management LLC, reflecting both its rich history and continued
+                growth.
+              </p>
+              <p>
+                We are proud to be an affiliate of Osaic, one of the largest
+                independent wealth management platforms in the United States.
+                Osaic supports over 11,000 independent financial professionals and
+                270 financial institutions, overseeing more than $700 billion in
+                total client assets — giving our clients access to the resources
+                and depth of a national platform with the personal attention of a
+                local firm.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              className="bio-toggle"
+              aria-expanded={bioOpen}
+              aria-controls="bio-more"
+              onClick={() => setBioOpen((o) => !o)}
+            >
+              {bioOpen ? "Show less" : "Read our full history"}
+              {/* Wrapper carries the rotation — transform on a bare <svg> is unreliable. */}
+              <span className="chev" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </span>
+            </button>
           </div>
           <div className="about-photo reveal">
             <img src="/images/office-exterior.jpg" alt="Sandefur Wilson Asset Management office in Albany, Georgia" />

@@ -70,6 +70,16 @@ section{padding:110px 0}
 .about-txt h2{font-size:clamp(2rem,4vw,2.9rem);color:var(--forest);margin:14px 0 22px}
 .about-txt p{color:#43483f;margin-bottom:18px;font-size:1.05rem}
 .about-photo{position:sticky;top:110px}
+/* Bio collapses to the client's own summary; the dated history expands. */
+.bio-toggle{display:inline-flex;align-items:center;gap:8px;margin-top:6px;padding:0;background:none;border:0;cursor:pointer;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--sun);transition:color .2s}
+.bio-toggle:hover{color:var(--forest)}
+.bio-toggle .chev{display:inline-flex;transition:transform .25s}
+.bio-toggle[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.bio-toggle svg{width:16px;height:16px;display:block}
+.bio-more[hidden]{display:none}
+.bio-more.open{animation:bioIn .35s ease both}
+@keyframes bioIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.bio-more.open{animation:none}}
 .about-photo img{width:100%;border-radius:4px;box-shadow:0 30px 60px -30px rgba(30,49,38,.55)}
 .about-photo .tag{position:absolute;bottom:-22px;left:-22px;background:var(--forest);color:var(--sand);padding:22px 26px;border-radius:4px;max-width:220px}
 .about-photo .tag b{font-family:'Fraunces',serif;font-size:2.4rem;color:#fff;display:block;line-height:1}
