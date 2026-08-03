@@ -50,7 +50,7 @@ header.scrolled{background:rgba(21,35,24,.94);backdrop-filter:blur(8px);box-shad
 /* HERO */
 /* Hero content is only ~410px tall, so a full 100vh left more than half the
    section empty. Clamp keeps it from growing unbounded on tall monitors. */
-.hero{position:relative;min-height:clamp(540px,78vh,800px);padding:0;display:flex;align-items:center;color:#fff;background:linear-gradient(rgba(21,35,24,.35),rgba(21,35,24,.72)),url('/images/cotton-field.jpg') center/cover no-repeat}
+.hero{position:relative;min-height:clamp(580px,86vh,880px);padding:0;display:flex;align-items:center;color:#fff;background:linear-gradient(rgba(21,35,24,.35),rgba(21,35,24,.72)),url('/images/cotton-field.jpg') center/cover no-repeat}
 .hero-inner{max-width:720px;padding:100px 0 80px}
 .hero .eyebrow{color:var(--sand)}
 .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:18px 0 22px;font-weight:400}
