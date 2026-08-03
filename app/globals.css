@@ -48,8 +48,10 @@ header.scrolled{background:rgba(21,35,24,.94);backdrop-filter:blur(8px);box-shad
 }
 
 /* HERO */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;background:linear-gradient(rgba(21,35,24,.35),rgba(21,35,24,.72)),url('/images/cotton-field.jpg') center/cover no-repeat}
-.hero-inner{max-width:720px;padding:120px 0 90px}
+/* Hero content is only ~410px tall, so a full 100vh left more than half the
+   section empty. Clamp keeps it from growing unbounded on tall monitors. */
+.hero{position:relative;min-height:clamp(500px,72vh,760px);padding:0;display:flex;align-items:center;color:#fff;background:linear-gradient(rgba(21,35,24,.35),rgba(21,35,24,.72)),url('/images/cotton-field.jpg') center/cover no-repeat}
+.hero-inner{max-width:720px;padding:100px 0 80px}
 .hero .eyebrow{color:var(--sand)}
 .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:18px 0 22px;font-weight:400}
 .hero p{font-size:1.18rem;font-weight:300;max-width:560px;opacity:.94;margin-bottom:34px}
@@ -279,8 +281,8 @@ section{scroll-margin-top:66px}
   section{padding:64px 0}
   .section-head{margin-bottom:36px}
 
-  .hero{min-height:92vh}
-  .hero-inner{padding:128px 30px 92px}
+  .hero{min-height:clamp(460px,68vh,660px)}
+  .hero-inner{padding:110px 30px 84px}
   .hero h1{margin:16px 0 20px}
   .hero p{font-size:1.05rem;margin-bottom:28px}
   .hero-cta{gap:12px}
