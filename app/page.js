@@ -380,13 +380,17 @@ export default function Home() {
             <div className="detail">
               <div>
                 <div className="k">Phone</div>
-                <div className="v">(229) 446-1918</div>
+                <div className="v">
+                  <a href="tel:+12294461918">(229) 446-1918</a>
+                </div>
               </div>
             </div>
             <div className="detail">
               <div>
                 <div className="k">Email</div>
-                <div className="v">rwilson@swamllc.com</div>
+                <div className="v">
+                  <a href="mailto:rwilson@swamllc.com">rwilson@swamllc.com</a>
+                </div>
               </div>
             </div>
             <a href="#contact" className="btn">

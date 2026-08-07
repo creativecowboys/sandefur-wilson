@@ -186,8 +186,9 @@ header.solid{background:var(--forest-deep)}
 /* CONTACT PAGE */
 .contact-page-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:8px}
 .contact-page-details .detail{margin-bottom:30px}
-.contact-page-details .v a{color:var(--text);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(42,47,42,.28);transition:.2s}
-.contact-page-details .v a:hover{color:var(--sun);text-decoration-color:var(--sun)}
+/* Applies to the homepage contact block and the contact page alike. */
+.detail .v a{color:var(--text);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(42,47,42,.28);transition:.2s}
+.detail .v a:hover{color:var(--sun);text-decoration-color:var(--sun)}
 .contact-page-photo img{width:100%;border-radius:3px}
 
 @media(max-width:620px){
