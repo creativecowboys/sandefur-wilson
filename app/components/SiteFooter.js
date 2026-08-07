@@ -16,7 +16,7 @@ export default function SiteFooter({ home = "#top" }) {
               <span>Asset Management</span>
             </span>
           </a>
-          <div>2305 Robinhood Road, Albany, GA 31707&nbsp;·&nbsp;(229) 436-5472</div>
+          <div>2305 Robinhood Road, Albany, GA 31707&nbsp;·&nbsp;(229) 446-1918</div>
         </div>
         <p className="disclosure">
           Securities and advisory services offered through Osaic Wealth, Inc.,

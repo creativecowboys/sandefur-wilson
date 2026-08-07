@@ -108,7 +108,7 @@ export default function Resources() {
           <p className="res-intro">
             Quick links to your accounts and to the tools we reference most often.
             If you have trouble reaching any of them, call us at{" "}
-            <a href="tel:+12294365472">(229) 436-5472</a>{" "}
+            <a href="tel:+12294461918">(229) 446-1918</a>{" "}
             and we&apos;ll walk you through it.
           </p>
 

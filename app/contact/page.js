@@ -17,8 +17,8 @@ const DETAILS = [
   },
   {
     label: "Phone",
-    lines: ["(229) 436-5472"],
-    href: "tel:+12294365472",
+    lines: ["(229) 446-1918"],
+    href: "tel:+12294461918",
   },
   {
     label: "Email",
@@ -41,8 +41,8 @@ export default function Contact() {
           </a>
           <nav className="nav-simple">
             <a href="/" className="nav-back">Back to site</a>
-            <a href="tel:+12294365472" className="btn">
-              Call (229) 436-5472
+            <a href="tel:+12294461918" className="btn">
+              Call (229) 446-1918
             </a>
           </nav>
         </div>

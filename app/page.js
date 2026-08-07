@@ -380,7 +380,7 @@ export default function Home() {
             <div className="detail">
               <div>
                 <div className="k">Phone</div>
-                <div className="v">(229) 436-5472</div>
+                <div className="v">(229) 446-1918</div>
               </div>
             </div>
             <div className="detail">
