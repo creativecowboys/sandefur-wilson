@@ -278,9 +278,19 @@ export default function Home() {
                 <h3>Bobby Wilson</h3>
                 <span className="role">Principal &amp; Financial Advisor</span>
                 <p>
-                  Bobby took the reins from the firm&apos;s founder — his father-in-law,
-                  Bill Sandefur — and has spent decades helping families across
-                  South Georgia see the whole landscape of their finances and plan
+                  With more than 25 years of experience as a financial advisor,
+                  Bobby has spent his career helping individuals and families
+                  across the country navigate their financial lives with clarity
+                  and confidence. He takes a comprehensive approach to financial
+                  planning, looking beyond individual investments to understand
+                  how each piece of a client&apos;s financial picture fits together.
+                </p>
+                <p>
+                  His approach is rooted in building lasting relationships and
+                  taking the time to understand what matters most to each client.
+                  Whether planning for retirement, managing investments, or
+                  preparing for the next generation, Bobby is committed to
+                  helping clients make informed decisions and pursue their goals
                   with confidence.
                 </p>
               </div>
@@ -288,10 +298,19 @@ export default function Home() {
                 <h3>Robert Aaron Wilson</h3>
                 <span className="role">Financial Advisor</span>
                 <p>
-                  Working alongside his father, Robert Aaron brings the next
-                  generation of the firm&apos;s commitment to personal, long-term
-                  financial guidance — ensuring continuity for the families they
-                  serve.
+                  Robert Aaron brings the next generation of the firm&apos;s
+                  commitment to personal, long-term financial guidance. He has
+                  been working alongside his father since 2017, gaining years of
+                  hands-on experience and learning the importance of building
+                  lasting relationships with the families they serve.
+                </p>
+                <p>
+                  His approach begins with listening and understanding each
+                  client&apos;s unique goals, priorities, and circumstances.
+                  Rather than a one-size-fits-all approach, Robert Aaron helps
+                  clients find financial strategies that fit their lives and
+                  gives them the confidence to make informed decisions about
+                  their future.
                 </p>
               </div>
             </div>
