@@ -312,6 +312,22 @@ export default function Home() {
                   their future.
                 </p>
               </div>
+              <div className="team-member">
+                <h3>Patricia Anderson</h3>
+                <span className="role">Administrative Assistant</span>
+                <p>
+                  With 20 years of experience at Sandefur Wilson, Patricia has
+                  been an integral part of the firm&apos;s day-to-day operations
+                  and a familiar, trusted presence for clients. She helps keep
+                  the firm running smoothly while providing the organization,
+                  support, and personal attention that clients have come to
+                  appreciate.
+                </p>
+                <p>
+                  Patricia&apos;s dedication and commitment to the firm reflect
+                  the long-term relationships at the heart of Sandefur Wilson.
+                </p>
+              </div>
             </div>
           </div>
         </div>
