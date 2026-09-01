@@ -314,7 +314,6 @@ export default function Home() {
               </div>
               <div className="team-member">
                 <h3>Patricia Anderson</h3>
-                <span className="role">Administrative Assistant</span>
                 <p>
                   With 20 years of experience at Sandefur Wilson, Patricia has
                   been an integral part of the firm&apos;s day-to-day operations
