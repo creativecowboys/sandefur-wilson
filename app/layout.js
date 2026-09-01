@@ -14,7 +14,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <a
+          href="https://brokercheck.finra.org/"
+          className="brokercheck-bubble"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Check us out on FINRA BrokerCheck"
+        >
+          BrokerCheck
+        </a>
+      </body>
     </html>
   );
 }
