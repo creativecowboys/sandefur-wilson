@@ -22,8 +22,8 @@ const DETAILS = [
   },
   {
     label: "Email",
-    lines: ["rwilson@swamllc.com"],
-    href: "mailto:rwilson@swamllc.com",
+    lines: ["info@swamllc.com"],
+    href: "mailto:info@swamllc.com",
   },
 ];
 

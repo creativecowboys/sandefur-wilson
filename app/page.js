@@ -408,7 +408,7 @@ export default function Home() {
               <div>
                 <div className="k">Email</div>
                 <div className="v">
-                  <a href="mailto:rwilson@swamllc.com">rwilson@swamllc.com</a>
+                  <a href="mailto:info@swamllc.com">info@swamllc.com</a>
                 </div>
               </div>
             </div>
