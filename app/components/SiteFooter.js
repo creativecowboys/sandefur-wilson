@@ -13,7 +13,7 @@ export default function SiteFooter({ home = "#top" }) {
             <img src="/images/mark-white.png" alt="SW" />
             <span className="brand-txt">
               <b>Sandefur Wilson</b>
-              <span>Asset Management</span>
+              <span>Asset Management, LLC</span>
             </span>
           </a>
           <div>2305 Robinhood Road, Albany, GA 31707&nbsp;·&nbsp;(229) 446-1918</div>

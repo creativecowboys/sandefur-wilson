@@ -1,9 +1,9 @@
 import SiteFooter from "../components/SiteFooter";
 
 export const metadata = {
-  title: "Client Resources | Sandefur Wilson Asset Management",
+  title: "Client Resources | Sandefur Wilson Asset Management, LLC",
   description:
-    "Account access, research tools, and planning resources for Sandefur Wilson Asset Management clients in Albany, Georgia.",
+    "Account access, research tools, and planning resources for Sandefur Wilson Asset Management, LLC clients in Albany, Georgia.",
 };
 
 /**
@@ -89,7 +89,7 @@ export default function Resources() {
             <img src="/images/mark-white.png" alt="SW" />
             <span className="brand-txt">
               <b>Sandefur Wilson</b>
-              <span>Asset Management</span>
+              <span>Asset Management, LLC</span>
             </span>
           </a>
           <nav className="nav-simple">

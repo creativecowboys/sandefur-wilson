@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Sandefur Wilson Asset Management | Albany, GA",
+  title: "Sandefur Wilson Asset Management, LLC | Albany, GA",
   description:
-    "Sandefur Wilson Asset Management — investment advisory, financial planning, and life insurance in Albany, Georgia. 50+ years helping families grow and protect what matters.",
+    "Sandefur Wilson Asset Management, LLC — investment advisory, financial planning, and life insurance in Albany, Georgia. 50+ years helping families grow and protect what matters.",
 
   // ⚠️ PRE-LAUNCH ONLY — DELETE THESE 3 LINES WHEN THE SITE MOVES TO ITS REAL DOMAIN.
   // Keeps wilson.creativecowboys.co out of Google while it's staff-review only.

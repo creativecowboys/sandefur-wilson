@@ -1,9 +1,9 @@
 import SiteFooter from "../components/SiteFooter";
 
 export const metadata = {
-  title: "Contact | Sandefur Wilson Asset Management",
+  title: "Contact | Sandefur Wilson Asset Management, LLC",
   description:
-    "Contact Sandefur Wilson Asset Management in Albany, Georgia — office address, phone, and email.",
+    "Contact Sandefur Wilson Asset Management, LLC in Albany, Georgia — office address, phone, and email.",
 };
 
 /**
@@ -36,7 +36,7 @@ export default function Contact() {
             <img src="/images/mark-white.png" alt="SW" />
             <span className="brand-txt">
               <b>Sandefur Wilson</b>
-              <span>Asset Management</span>
+              <span>Asset Management, LLC</span>
             </span>
           </a>
           <nav className="nav-simple">

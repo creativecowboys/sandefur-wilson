@@ -54,7 +54,7 @@ export default function Home() {
             <img src="/images/mark-white.png" alt="SW" />
             <span className="brand-txt">
               <b>Sandefur Wilson</b>
-              <span>Asset Management</span>
+              <span>Asset Management, LLC</span>
             </span>
           </a>
           <button
@@ -97,7 +97,7 @@ export default function Home() {
             Harvest for life.
           </h1>
           <p>
-            For more than 50 years, Sandefur Wilson Asset Management has helped
+            For more than 50 years, Sandefur Wilson Asset Management, LLC has helped
             families, individuals, and businesses grow, protect, and pass on what they&apos;ve
             worked for — with a steady hand and a long view.
           </p>
@@ -139,7 +139,7 @@ export default function Home() {
               watching the trends and flows of the economy.
             </p>
             <p>
-              Sandefur Wilson Asset Management traces its roots to 1973,
+              Sandefur Wilson Asset Management, LLC traces its roots to 1973,
               representing more than five decades of personalized financial
               guidance and three generations of family leadership.
             </p>
@@ -205,7 +205,7 @@ export default function Home() {
             </button>
           </div>
           <div className="about-photo reveal">
-            <img src="/images/office-exterior.jpg" alt="Sandefur Wilson Asset Management office in Albany, Georgia" />
+            <img src="/images/office-exterior.jpg" alt="Sandefur Wilson Asset Management, LLC office in Albany, Georgia" />
             <div className="tag">
               <b>50+</b>
               <span>years guiding families through every kind of market</span>
@@ -307,7 +307,7 @@ export default function Home() {
                   His approach begins with listening and understanding each
                   client&apos;s unique goals, priorities, and circumstances.
                   Rather than a one-size-fits-all approach, Robert Aaron helps
-                  clients find financial strategies that fit their lives and
+                  clients implement financial strategies that fit their lives and
                   gives them the confidence to make informed decisions about
                   their future.
                 </p>
