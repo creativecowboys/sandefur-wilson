@@ -296,7 +296,6 @@ export default function Home() {
               </div>
               <div className="team-member">
                 <h3>Robert Aaron Wilson</h3>
-                <span className="role">Financial Advisor</span>
                 <p>
                   Robert Aaron brings the next generation of the firm&apos;s
                   commitment to personal, long-term financial guidance. He has
