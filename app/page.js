@@ -299,7 +299,7 @@ export default function Home() {
                 <p>
                   Robert Aaron brings the next generation of the firm&apos;s
                   commitment to personal, long-term financial guidance. He has
-                  been working alongside his father since 2023, gaining years of
+                  been working alongside his father since 2023, gaining
                   hands-on experience and learning the importance of building
                   lasting relationships with the families they serve.
                 </p>
