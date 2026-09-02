@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           rel="noopener noreferrer"
           aria-label="Check us out on FINRA BrokerCheck"
         >
-          BrokerCheck
+          FINRA BrokerCheck
         </a>
       </body>
     </html>

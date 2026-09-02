@@ -118,7 +118,9 @@ export default function Home() {
         <div className="wrap stats-grid">
           <div className="stat reveal"><b>50+</b><span>Years of experience</span></div>
           <div className="stat reveal"><b>3</b><span>Generations, one practice</span></div>
-          <div className="stat reveal"><b>$700B+</b><span>Client assets through Osaic</span></div>
+          {/* Firm AUM stat goes here once the client provides the figure —
+              Osaic compliance requires it be the firm's own assets with an
+              "as of (date)" and substantiation. Grid is 3-col until then. */}
           <div className="stat reveal"><b>100%</b><span>Fiduciary &amp; independent</span></div>
         </div>
       </section>
@@ -296,24 +298,23 @@ export default function Home() {
               </div>
               <div className="team-member">
                 <h3>Robert Aaron Wilson</h3>
+                <span className="role">Administrative Team Member</span>
                 <p>
-                  Robert Aaron brings the next generation of the firm&apos;s
-                  commitment to personal, long-term financial guidance. He has
-                  been working alongside his father since 2023, gaining
-                  hands-on experience and learning the importance of building
-                  lasting relationships with the families they serve.
+                  Robert Aaron serves the firm in an administrative role,
+                  working alongside his father since 2023. He supports
+                  Bobby&apos;s clients with scheduling, service, and day-to-day
+                  needs, gaining hands-on experience and learning the importance
+                  of building lasting relationships with the families the firm
+                  serves.
                 </p>
                 <p>
-                  His approach begins with listening and understanding each
-                  client&apos;s unique goals, priorities, and circumstances.
-                  Rather than a one-size-fits-all approach, Robert Aaron helps
-                  clients implement financial strategies that fit their lives and
-                  gives them the confidence to make informed decisions about
-                  their future.
+                  Robert Aaron does not maintain his own clients. All products
+                  and services of the firm are offered through Bobby Wilson.
                 </p>
               </div>
               <div className="team-member">
                 <h3>Patricia Anderson</h3>
+                <span className="role">Administrative Assistant</span>
                 <p>
                   With 20 years of experience at Sandefur Wilson, Patricia has
                   been an integral part of the firm&apos;s day-to-day operations

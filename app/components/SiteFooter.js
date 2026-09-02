@@ -19,14 +19,25 @@ export default function SiteFooter({ home = "#top" }) {
           <div>2305 Robinhood Road, Albany, GA 31707&nbsp;·&nbsp;(229) 446-1918</div>
         </div>
         <p className="disclosure">
-          Securities and advisory services offered through Osaic Wealth, Inc.,
+          Securities and advisory services offered through <strong>Osaic
+          Wealth, Inc.</strong>,
           member <a href="https://www.finra.org" target="_blank" rel="noopener noreferrer">FINRA</a>/<a href="https://www.sipc.org" target="_blank" rel="noopener noreferrer">SIPC</a>.
-          Sandefur Wilson Asset Management, LLC is separately owned and other
+          <strong> Osaic Wealth, Inc.</strong> is separately owned and other
           entities and/or marketing names, products, or services referenced
-          here are independent of Osaic Wealth, Inc. Investment advisory and
-          insurance products carry required disclosures. © 2026 Sandefur Wilson
-          Asset Management, LLC. All rights reserved.
+          here are independent of <strong>Osaic Wealth, Inc.</strong> Investment
+          advisory and insurance products carry required disclosures. © 2026
+          Sandefur Wilson Asset Management, LLC. All rights reserved.
         </p>
+        <div className="foot-links">
+          <a
+            className="btn"
+            href="https://www.osaic.com/crs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Osaic Form CRS
+          </a>
+        </div>
         <div className="foot-bottom">
           <a
             className="cc-credit"

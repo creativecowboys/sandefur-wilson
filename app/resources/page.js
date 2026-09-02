@@ -143,7 +143,7 @@ export default function Resources() {
 
           <p className="res-note">
             The links above open websites operated by third parties. Sandefur
-            Wilson Asset Management, LLC and Osaic Wealth, Inc. are not
+            Wilson Asset Management, LLC and <strong>Osaic Wealth, Inc.</strong> are not
             responsible for and do not control, adopt, or endorse the content of
             any third-party site. We will never ask you for your password or
             account credentials by email or text — always sign in directly
