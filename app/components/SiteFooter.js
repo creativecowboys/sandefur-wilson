@@ -18,6 +18,20 @@ export default function SiteFooter({ home = "#top" }) {
           </a>
           <div>2305 Robinhood Road, Albany, GA 31707&nbsp;·&nbsp;(229) 446-1918</div>
         </div>
+        {/*
+          Blue sky disclosure — wording is prescribed verbatim by the Osaic
+          advertising review (AdTrax item 9105546). Do not reword. The state
+          list is Bobby Wilson's BrokerCheck registrations, broker-dealer and
+          investment adviser combined — update it only from a current
+          BrokerCheck record.
+        */}
+        <p className="disclosure">
+          This communication is strictly intended for individuals residing in
+          the states of Alabama, Colorado, Florida, Georgia, Kentucky, Montana,
+          New Mexico, North Carolina, Ohio, South Carolina, Texas, Virginia, and
+          Wyoming. No offers may be made or accepted from any resident outside
+          the specific state(s) referenced.
+        </p>
         <p className="disclosure">
           Securities and advisory services offered through <strong>Osaic
           Wealth, Inc.</strong>,

@@ -179,14 +179,19 @@ export default function Home() {
                 Management LLC, reflecting both its rich history and continued
                 growth.
               </p>
+              {/*
+                Osaic's total-client-assets figure was removed per the Osaic
+                advertising review (AdTrax item 9105546, item 6) — Bobby
+                Wilson's instruction was "remove." Do not reintroduce a
+                dollar-amount assets claim without compliance approval.
+              */}
               <p>
                 We are proud to be an affiliate of Osaic, one of the largest
                 independent wealth management platforms in the United States.
-                Osaic supports over 11,000 independent financial professionals and
-                270 financial institutions, overseeing more than $700 billion in
-                total client assets — giving our clients access to the resources
-                and depth of a national platform with the personal attention of a
-                local firm.
+                Osaic supports over 11,000 independent financial professionals
+                and 270 financial institutions — giving our clients access to
+                the resources and depth of a national platform with the personal
+                attention of a local firm.
               </p>
             </div>
 
@@ -298,7 +303,7 @@ export default function Home() {
               </div>
               <div className="team-member">
                 <h3>Robert Aaron Wilson</h3>
-                <span className="role">Administrative Team Member</span>
+                <span className="role">Financial Paraplanner</span>
                 <p>
                   Robert Aaron serves the firm in an administrative role,
                   working alongside his father since 2023. He supports
