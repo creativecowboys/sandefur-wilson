@@ -225,12 +225,15 @@ header.solid{background:var(--forest-deep)}
 .cred b{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:1.15rem;color:var(--forest);margin-bottom:8px}
 .cred span{font-size:.92rem;color:#5a5f54;line-height:1.55}
 .cred em{font-style:normal;color:var(--sun);font-size:.82rem}
-.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.quote{margin:0;background:var(--forest);color:var(--cream);border-radius:12px;padding:30px 28px;position:relative;overflow:hidden}
+.testimonials{display:flex;flex-direction:column;gap:22px}
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;align-items:stretch}
+.quote{margin:0;background:var(--forest);color:var(--cream);border-radius:12px;padding:30px 28px;position:relative;overflow:hidden;display:flex;flex-direction:column}
 .quote::before{content:"\201C";position:absolute;top:2px;left:18px;font-family:'Fraunces',serif;font-size:5rem;color:rgba(216,201,168,.28);line-height:1}
-.quote blockquote{margin:0 0 18px;font-size:1.02rem;line-height:1.6;position:relative}
+.quote blockquote{margin:0 0 18px;padding-top:36px;font-size:1.02rem;line-height:1.6;position:relative;flex:1;text-wrap:pretty}
 .quote figcaption{font-size:.85rem;color:var(--sand);font-weight:500}
 .quote figcaption span{color:rgba(216,201,168,.55);font-weight:400}
+/* Compliance disclosure sits with the testimonials, at body size — not footer fine print. */
+.testimonial-disclosure{margin:0;padding:18px 22px;background:#fff;border:1px solid #e8e1d0;border-left:4px solid var(--sun);border-radius:12px;font-size:1rem;line-height:1.55;color:var(--text)}
 
 /* organic nudge: softer, rounder cards */
 .card{border-radius:12px}
