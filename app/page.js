@@ -3,6 +3,37 @@
 import { useEffect, useState } from "react";
 import SiteFooter from "./components/SiteFooter";
 
+// Approved client wording. Do not invent ratings, photos, or extra quotes.
+const TESTIMONIALS = [
+  {
+    quote:
+      "Bobby was there for me when I retired with a simple and productive plan to secure my family's future.....",
+    name: "M. Land",
+    place: "Sylvester, GA",
+  },
+  {
+    quote:
+      "We have been clients of Bobby's for many years, its the personal touch Bobby and Robert give us while putting our interest first to secure our financial future.",
+    name: "D. Smith",
+    place: "Albany, GA",
+  },
+  {
+    quote:
+      "For 19 years now, Bobby Wilson and his team have impeccably managed our retirement accounts. Along with his expertise on market analysis and fund management, the biggest benefit for us is how Bobby has gotten to know us personally and he fully understands our retirement desires. We can say with total confidence that Bobby has our best interests at heart as we continue to move towards our life goals. We're so glad we chose Bobby!",
+    name: "C. Cox",
+    place: "Columbia Falls, MT",
+  },
+  {
+    quote:
+      "I retired in 2017. Bobby has been my Financial Advisor from the first day of my retirement. He has been more than my Financial Advisor, he has been a friend someone we can count on for day to day life decision. When his son joined the business it became family oriented Financial service. Letting you know that our financial decisions will be well taken care of for years to come.",
+    name: "C. Hubbard",
+    place: "Albany, GA",
+  },
+];
+
+const TESTIMONIAL_DISCLOSURE =
+  "Non-compensated client testimonial; may not be representative of all client experiences; no guarantee of future performance or success.";
+
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -366,20 +397,20 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Client testimonials — leaving for now pending compliance review */}
-          <div className="quotes">
-            <figure className="quote reveal">
-              <blockquote>&ldquo;Bobby has looked after our family&apos;s finances for years. He explains everything plainly and always has our long-term interests at heart.&rdquo;</blockquote>
-              <figcaption>Client, Albany GA</figcaption>
-            </figure>
-            <figure className="quote reveal">
-              <blockquote>&ldquo;Having father and son on our plan gives us real peace of mind — a steady hand today and for the next generation.&rdquo;</blockquote>
-              <figcaption>Client, Lee County GA</figcaption>
-            </figure>
-            <figure className="quote reveal">
-              <blockquote>&ldquo;No pressure, no jargon. Just clear guidance that&apos;s helped us plan for retirement with confidence.&rdquo;</blockquote>
-              <figcaption>Client, Dougherty County GA</figcaption>
-            </figure>
+          {/* Approved client testimonials. The disclosure must stay adjacent — do not move it to the footer. */}
+          <div className="testimonials" id="testimonials">
+            <p className="testimonial-disclosure">{TESTIMONIAL_DISCLOSURE}</p>
+            <div className="quotes">
+              {TESTIMONIALS.map((item) => (
+                <figure className="quote reveal" key={item.name}>
+                  <blockquote>&ldquo;{item.quote}&rdquo;</blockquote>
+                  <figcaption>
+                    {item.name}
+                    <span>, {item.place}</span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
       </section>
